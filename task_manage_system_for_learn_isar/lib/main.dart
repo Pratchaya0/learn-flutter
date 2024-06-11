@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:task_manage_system_for_learn_isar/models/category/category.dart';
-import 'package:task_manage_system_for_learn_isar/models/routine/routine.dart';
+import 'package:task_manage_system_for_learn_isar/collections/category.dart';
+import 'package:task_manage_system_for_learn_isar/collections/routine.dart';
 import 'package:task_manage_system_for_learn_isar/screens/main_screen.dart';
 
 void main() async {
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue.shade200),
         useMaterial3: true,
       ),
-      home: const MainScreen(),
+      home: MainScreen(isar: isar),
     );
   }
 }

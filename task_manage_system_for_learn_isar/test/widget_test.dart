@@ -11,8 +11,8 @@ import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'package:task_manage_system_for_learn_isar/main.dart';
-import 'package:task_manage_system_for_learn_isar/models/category/category.dart';
-import 'package:task_manage_system_for_learn_isar/models/routine/routine.dart';
+import 'package:task_manage_system_for_learn_isar/collections/category.dart';
+import 'package:task_manage_system_for_learn_isar/collections/routine.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

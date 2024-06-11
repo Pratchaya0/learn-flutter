@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:task_manage_system_for_learn_isar/models/routine/routine.dart';
+import 'package:isar/isar.dart';
+import 'package:task_manage_system_for_learn_isar/collections/routine.dart';
 
 class MainScreen extends StatefulWidget {
-  const MainScreen({super.key});
+  final Isar isar;
+  const MainScreen({super.key, required this.isar});
 
   @override
   State<MainScreen> createState() => _MainScreenState();
